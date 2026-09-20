@@ -1,33 +1,38 @@
-# Setup & Run Instructions
+# ToDoList
 
-I have automatically organized the project structure for you.
+**A task app with attention to the way it moves.**
 
-## Prerequisites
-- **Flutter SDK** installed and in your PATH.
-- **Android Studio** or **VS Code** with Flutter extensions (optional but recommended).
-- A connected device (Android/iOS) or Emulator/Simulator.
+A Flutter mobile project exploring task-list interaction, animation, and local persistence.
 
-## How to Run
-1. **Open Terminal** in this directory:
-   ```bash
-   cd /Users/feboyfierlyan/Documents/coding/project/ToDoList
-   ```
+[Design case study](https://feboyfierlyan.com/projects/todolist) · [More projects](https://github.com/feboyfierlyan)
 
-2. **Get Dependencies** (should be automatic, but good to verify):
-   ```bash
-   flutter pub get
-   ```
+![ToDoList mobile interface from the published portfolio](docs/media/preview.png)
 
-3. **Run the App**:
-   ```bash
-   flutter run
-   ```
+Preview from the [published portfolio](https://feboyfierlyan.com/projects/todolist).
 
-## Troubleshooting
-- If you see "No connected devices", launch a simulator or connect your phone.
-- If you see CocoaPods errors on Mac (for iOS), run:
-  ```bash
-  cd ios
-  pod install
-  cd ..
-  ```
+## Inside the project
+
+The application lives in [`lib/main.dart`](lib/main.dart). It uses Flutter's widgets and custom painting, `flutter_animate` for motion, `shared_preferences` for local storage, and modal bottom sheets for interaction.
+
+## Run locally
+
+Use a Flutter SDK that includes Dart 3.9.2 or a compatible later 3.x release, as required by [`pubspec.yaml`](pubspec.yaml), and connect a device or start an emulator.
+
+```sh
+git clone https://github.com/feboyfierlyan/ToDoList.git
+cd ToDoList
+flutter pub get
+flutter run
+```
+
+For iOS development, install Xcode and CocoaPods. If native dependencies need refreshing:
+
+```sh
+cd ios
+pod install
+cd ..
+```
+
+## Design story
+
+The [case study](https://feboyfierlyan.com/projects/todolist) presents the interface and motion direction. This repository contains the Flutter implementation.
